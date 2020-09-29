@@ -1,0 +1,38 @@
+/* /* .about {
+  background-color: aliceblue;
+  padding: 15px;
+}
+h1 {
+  /* margin-top: 10px; */
+/* margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 70px;
+}
+p {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: medium;
+  font-weight: 200;
+}  */
+.about_bg {
+  background: white;
+  padding: 10px;
+}
+.image_about {
+  border: 1px solid white;
+  margin-top: 10px;
+  margin-left: 10px;
+  object-fit: cover;
+  height: 40%;
+  /* width: 40%; */
+}
+.aboutPara {
+  letter-spacing: 1px;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.aboutButton {
+  margin: 0 !important;
+  padding: 0 !important;
+}

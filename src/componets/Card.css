@@ -1,0 +1,61 @@
+.testimonial-section {
+  /* background: linear-gradient(to bottom, #dd2476, #ff512f); */
+  padding: 40px 0;
+  margin: 40px 0;
+  border-radius: 23px;
+}
+
+.inner-width {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+.testimonial-section {
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+}
+.border {
+  width: 100px;
+  height: 3px;
+  background: #333;
+  margin: 40px auto;
+}
+.testimonial {
+  background: #f1f1f1;
+  padding: 40px;
+  height: fit-content;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.test-info {
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+.test-pic {
+  width: 50px !important;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.test-name {
+  font-size: 12px;
+  color: #333;
+}
+.test-name span {
+  display: block;
+  font-size: 16px;
+  font-weight: 900;
+  color: #3498db;
+}
+.testimonial p {
+  font-size: 16px;
+  font-family: "Leckerli One";
+  line-height: 22px;
+  margin-top: 20px;
+  color: #333;
+}
+.card {
+  margin: auto;
+}
