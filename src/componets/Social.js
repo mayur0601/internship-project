@@ -5,7 +5,7 @@ import "./Social.css";
 function Social() {
   return (
     <div className="social">
-      <Link className="facebook" className="social-btn" target="_blank" href="">
+      <Link className="facebook social-btn" href="">
         <img
           className="social-img"
           src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png"
@@ -21,7 +21,7 @@ function Social() {
         />
       </Link> */}
 
-      <Link className="twitter" className="social-btn" target="_blank" href="">
+      <Link className="twitter social-btn" href="">
         <img
           className="social-img"
           src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000016_1549330452_twitter-logo.png"
@@ -29,7 +29,7 @@ function Social() {
         />
       </Link>
 
-      <Link className="gmail" className="social-btn" target="_blank" href="">
+      <Link className="gmail social-btn" href="">
         <img
           className="social-img"
           src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000017_1549330467_google-logo.png"
@@ -37,7 +37,7 @@ function Social() {
         />
       </Link>
 
-      <Link className="whatsapp" className="social-btn" target="_blank" href="">
+      <Link className="whatsapp social-btn" href="">
         <img
           className="social-img"
           src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000018_1549330485_whatsapp-logo.png"
@@ -45,7 +45,7 @@ function Social() {
         />
       </Link>
 
-      {/* <Link id="mail" className="social-btn" target="_blank" href="">
+      {/* <Link id="mail" className="social-btn"  href="">
         <img
           className="social-img"
           src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000019_1549330510_mail-logo.png"

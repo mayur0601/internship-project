@@ -1,68 +1,60 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import laCrescendo from "../images/pianoRecitals1.jpg";
 
 const styles = {
-  footer: { background: "#1b1818", color: "white", padding: "10px" },
-  infoHalf: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-  },
-  titleSocial: {
-    fontSize: "x-large",
-    borderBottom: "3px solid peachpuff",
-    padding: "0 70px 0 0",
-  },
-  titleAddress: {
-    fontSize: "x-large",
-    borderBottom: "3px solid peachpuff",
-    padding: "0 120px 0 0",
-  },
-  titleForm: {
-    fontSize: "x-large",
-    borderBottom: "3px solid peachpuff",
-    padding: "0 10px 0 0",
-    width: "62%",
-  },
+  footer: { background: "white", color: "#222222", padding: "10px" },
   socialIcons: {
-    padding: "0 15px 0 15px",
+    margin: "5px 15px 0 20px",
   },
-  socialIconsDiv: {
-    marginLeft: "30px",
-    width: "100%",
+  footerForm: {
+    background: "#1b1818",
+    padding: "20px",
+    fontSize: "20px",
+    borderRadius: "10px",
+    color: "white",
   },
-  addressDiv: {
-    marginLeft: "30px",
-    width: "100%",
+  logoStyling: {
+    width: "100px",
+    margin: "auto",
+  },
+  copyright: {
+    background: "#222222",
+    color: "white",
+    margin: "8px 0 0 0",
   },
 };
 
-function Footer(props) {
+function Footer() {
   return (
-    <div style={styles.footer}>
-      <Container>
-        <Row>
-          <Col md={{ span: 6, order: "last" }}>
-            <div>
-              <p style={styles.titleForm}>Send Us Your Feedback</p>
-            </div>
-            <Form className="pb-2">
-              <Form.Group>
-                <Row>
-                  <Col>
+    <Fragment>
+      <div className="bgImage">
+        <div>
+          <div className="header">
+            <h1 className="text-center">Contact us</h1>
+          </div>
+          <br></br>
+          <Container className="d-flex justify-content-center mb-4">
+            <Form className="footerForm" style={styles.footerForm}>
+              <Row>
+                <Col sm={6}>
+                  <Form.Group>
                     <Form.Label>First Name</Form.Label>
                     <Form.Control type="text" placeholder="First Name" />
-                  </Col>
-                  <Col>
+                  </Form.Group>
+                </Col>
+                <Col sm={6}>
+                  <Form.Group>
                     <Form.Label>Last Name</Form.Label>
                     <Form.Control type="text" placeholder="Last Name" />
-                  </Col>
-                </Row>
-              </Form.Group>
+                  </Form.Group>
+                </Col>
+              </Row>
+
               <Form.Group>
                 <Form.Label>Email</Form.Label>
                 <Form.Control type="email" placeholder="Email" />
@@ -72,62 +64,58 @@ function Footer(props) {
                 <Form.Control type="text" placeholder="Phone No." />
               </Form.Group>
               <Form.Group>
-                <Form.Label>Feedback </Form.Label>
-                <Form.Control as="textarea" rows={3} />
+                <Form.Label>Feedback</Form.Label>
+                <Form.Control as="textarea" placeholder="Feedback" rows={3} />
               </Form.Group>
-              <Button variant="primary" block>
-                Send Feedback
+
+              <Button variant="primary" type="submit" block>
+                Send FeedBack
               </Button>
             </Form>
-          </Col>
-          <Col style={styles.infoHalf} md={{ span: 6, order: "first" }}>
-            <Row className="pt-md-0 pb-md-0 pt-5 pb-5">
-              <div>
-                <p style={styles.titleSocial}>Social Media </p>
-              </div>
-              <div style={styles.socialIconsDiv} className="pt-2">
-                <i
-                  className="fa fa-facebook fa-lg socialIcon"
-                  style={styles.socialIcons}
-                ></i>
-                <i
-                  className="fa fa-youtube fa-lg socialIcon"
-                  style={styles.socialIcons}
-                ></i>
-                <i
-                  className="fa fa-instagram fa-lg socialIcon"
-                  style={styles.socialIcons}
-                ></i>
-                <i
-                  className="fa fa-envelope fa-lg socialIcon"
-                  style={styles.socialIcons}
-                ></i>
-                <i
-                  className="fa fa-whatsapp fa-lg socialIcon"
-                  style={styles.socialIcons}
-                ></i>
-              </div>
+          </Container>
+        </div>
+        <div style={styles.footer}>
+          <Container>
+            <Row>
+              <img src={laCrescendo} style={styles.logoStyling} alt="Logo" />
             </Row>
-            <Row style={{ paddingBottom: "50px" }}>
-              <div>
-                <p style={styles.titleAddress}>Address </p>
-              </div>
-              <div className="pt-1" style={styles.addressDiv}>
-                <p style={{ textAlign: "left" }}>
-                  12, Aboli, Wing III,
-                  <br />
-                  2nd Floor,
-                  <br />
-                  Virar(E), Palghar-401 305
-                  <br />
-                </p>
-              </div>
+            <Row>
+              <Col>
+                <div className="text-center pt-3">
+                  <i
+                    className="fa fa-facebook fa-2x socialIcon"
+                    style={styles.socialIcons}
+                  ></i>
+                  <i
+                    className="fa fa-youtube fa-2x socialIcon"
+                    style={styles.socialIcons}
+                  ></i>
+                  <i
+                    className="fa fa-instagram fa-2x socialIcon"
+                    style={styles.socialIcons}
+                  ></i>
+                  <i
+                    className="fa fa-envelope fa-2x socialIcon"
+                    style={styles.socialIcons}
+                  ></i>
+                  <i
+                    className="fa fa-whatsapp fa-2x socialIcon"
+                    style={styles.socialIcons}
+                  ></i>
+                </div>
+              </Col>
             </Row>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+          </Container>
+          <Row style={styles.copyright}>
+            <Col className="text-center">
+              <p>©Copyright 2020 La Crescendo All Rights Reserved.</p>
+            </Col>
+          </Row>
+        </div>
+      </div>
+    </Fragment>
   );
 }
 
 export default Footer;
+// 2020  All Rights Reserved.

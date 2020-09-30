@@ -30,7 +30,7 @@ function Navbar() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             La Crescendo
-            <i class="fab fa-typo3" />
+            {/* <i class="fab fa-typo3" /> */}
             {/* <img src="/piano recitals.jpg" className="header_logo" /> */}
           </Link>
           <div className="menu-icon" onClick={handleClick}>

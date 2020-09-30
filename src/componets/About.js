@@ -106,15 +106,18 @@ function About() {
           </svg>
         </div>
         <p className="text-center aboutPara">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum{" "}
+          We are a State-of-the-Art Music Institute located in India
+          specializing in the field of Piano. Our teachers have a vast
+          experience of more than 20 years in this stream of music and have been
+          teaching for 15 years. Our students are located across the globe and
+          are learning the Piano through online platforms in our Academy.{" "}
+          <br></br>
+          We teach the Piano - Western Classical Music and have been training
+          our students them well for their Trinity Grade Exams across all
+          levels; Initial, Intermediate and Advance over the past years. Our
+          students have also been learning with a keen interest and have proved
+          their mettle in music by their outstanding performances and
+          successfully coming out with flying colors.
           <Link to="/about" style={{ textDecoration: "none" }}>
             Read more...
           </Link>

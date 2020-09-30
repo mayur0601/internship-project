@@ -84,3 +84,49 @@
 .header h1 {
   color: white;
 }
+
+.footerBorder {
+  border-right: 3px solid;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footerBorder {
+    background: "red";
+    border-bottom: 3px ridge;
+    border-right: 0px;
+  }
+
+  .addressSpacing {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footerIconSpacing {
+    margin-bottom: 12px;
+  }
+}
+
+.footerForm {
+  min-width: 600px;
+}
+
+@media only screen and (max-width: 650px) {
+  .footerForm {
+    min-width: 450px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .footerForm {
+    min-width: 350px;
+  }
+}
+
+.bgImage {
+  background-image: url("https://images.unsplash.com/photo-1548538557-8ba32d70d9f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 40px;
+}

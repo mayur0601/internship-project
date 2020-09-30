@@ -13,9 +13,8 @@ function Home() {
       <BgSection />
       <About />
       <Break />
-      <SuccessStories />
-
       <Review />
+      <SuccessStories />
     </>
   );
 }

@@ -5,7 +5,7 @@ import "./Card.css";
 
 function Review() {
   return (
-    <div>
+    <div className="backgroundImg">
       <div className="header">
         <h1 className="text-center">REVIEWS</h1>
       </div>

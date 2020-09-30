@@ -5,11 +5,11 @@ import "./SuccessStories.css";
 function SuccessStories() {
   return (
     <div>
-      <div className="header">
+      {/* <div className="header">
         <h1 className="text-center">STUDENTS ACHIVEMENTS</h1>
-      </div>
+      </div> */}
       <div className="cards">
-        {/* <h1>Student Achivements</h1> */}
+        <h1>Student Achivements</h1>
         <div className="cards__container">
           <div className="cards__wrapper">
             <ul className="cards__items">

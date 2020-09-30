@@ -12,6 +12,13 @@
   display: block;
   padding: 14px 13px;
   color: #ffffff;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+.social .social-btn:hover {
+  transform: scale(1.5);
 }
 
 .social .social-img {

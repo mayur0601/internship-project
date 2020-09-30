@@ -6,8 +6,8 @@ function BgSection() {
   return (
     <div className="hero-container">
       <img
-        src="https://images.unsplash.com/photo-1565879629766-30adf38aac56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-        className="video"
+        src="https://images.unsplash.com/photo-1548695151-ac40f371b3f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        className="bg"
         alt=""
       />
       <h1 className="text-center">LA CRESCENDO</h1>
