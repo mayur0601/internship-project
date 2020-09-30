@@ -169,3 +169,11 @@
     transition: 250ms;
   }
 }
+.ftco-navbar-light {
+  background: transparent !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  top: 30px;
+}

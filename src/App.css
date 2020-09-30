@@ -62,3 +62,25 @@
   height: 1000px;
   width: 1000px;
 }
+/* .lessons {
+  background-color: white;
+  height: max;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card_lesson {
+  height: 500px;
+} */
+.header {
+  margin-top: 50px;
+  background-color: black;
+  margin-bottom: 100px;
+  opacity: 0.7;
+  width: 70%;
+  margin-left: 15%;
+}
+.header h1 {
+  color: white;
+}

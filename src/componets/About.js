@@ -1,10 +1,10 @@
 import React from "react";
 import "./About.css";
-import { Button } from "./Button";
+// import { Button } from "./Button";
 import { Link } from "react-router-dom";
 const styles = {
   aboutHeading: {
-    fontFamily: "Leckerli One",
+    // fontFamily: "",
     fontSize: "50px",
     marginBottom: "0",
   },

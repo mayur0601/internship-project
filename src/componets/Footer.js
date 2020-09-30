@@ -6,7 +6,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 const styles = {
-  footer: { background: "#333333", color: "white", padding: "10px" },
+  footer: { background: "#1b1818", color: "white", padding: "10px" },
   infoHalf: {
     display: "flex",
     flexDirection: "column",

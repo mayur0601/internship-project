@@ -4,12 +4,13 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./Navbar";
 import Home from "../componets/pages/Home";
 import Footer from "./Footer";
-
+import Social from "./Social";
 function App() {
   return (
     <div className="App">
       <Router>
         {/* header */}
+        <Social />
         <Navbar />
         <Switch>
           <Route exact path="/">
@@ -30,7 +31,9 @@ function App() {
             <h2>lessons</h2>
           </Route>
         </Switch>
-        <Footer />
+        <Route to="/contact">
+          <Footer />
+        </Route>
       </Router>
     </div>
   );

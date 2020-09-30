@@ -5,12 +5,16 @@ import BgSection from "../BgSection";
 // import Footer from '../Footer';
 import About from "../About";
 import Review from "../Review";
-
+import SuccessStories from "../SuccessStories";
+import Break from "../Break";
 function Home() {
   return (
     <>
       <BgSection />
       <About />
+      <Break />
+      <SuccessStories />
+
       <Review />
     </>
   );
