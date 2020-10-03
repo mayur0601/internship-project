@@ -110,14 +110,28 @@ function About() {
           specializing in the field of Piano. Our teachers have a vast
           experience of more than 20 years in this stream of music and have been
           teaching for 15 years. Our students are located across the globe and
-          are learning the Piano through online platforms in our Academy.{" "}
-          <br></br>
-          We teach the Piano - Western Classical Music and have been training
-          our students them well for their Trinity Grade Exams across all
-          levels; Initial, Intermediate and Advance over the past years. Our
-          students have also been learning with a keen interest and have proved
-          their mettle in music by their outstanding performances and
-          successfully coming out with flying colors.
+          are learning the Piano through online platforms in our Academy. We
+          teach the Piano - Western Classical Music and have been training our
+          students them well for their Trinity Grade Exams across all levels;
+          Initial, Intermediate and Advance over the past years. Our students
+          have also been learning with a keen interest and have proved their
+          mettle in music by their outstanding performances and successfully
+          coming out with flying colors. Our teaching methods are designed such
+          that the overall experience of learning is filled with practical
+          lessons, activities for children, pictorial representation with
+          various videos and above all are very interactive. We give equal focus
+          on the theoretical fundamentals and the practical lessons where the
+          student learns through a combination of both. Other areas also covered
+          by us are popular music songs which the student wishes to learn,
+          Hindustani or Hindi Songs, popular pieces from Wester Classical or
+          Hindi songs for performances, Nursery Rhymes for toddlers, Bollywood
+          and Hollywood popular songs and so on. Our Comprehensive syllabus
+          covers technical skills, Reading sheet music, Aural Skills, Sight
+          reading, Music Knowledge, Improvisation, Exercises for tone, Balance
+          and stability, hand co- ordination, finger and wrist strength and
+          stability and so on. Our students regularly participate in various
+          competitions and have been performing well in repertoire and pieces.
+          Come join us and make your musical journey melodious!!
           <Link to="/about" style={{ textDecoration: "none" }}>
             Read more...
           </Link>

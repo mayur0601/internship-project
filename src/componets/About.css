@@ -32,10 +32,161 @@ p {
   font-size: 25px;
   padding-bottom: 10px;
 }
+
 .aboutButton {
   margin: 0 !important;
   padding: 0 !important;
 }
 .break {
   height: 30px;
+}
+
+/* ABOUT PAGE */
+
+.aboutImage {
+  background: url("https://images.unsplash.com/photo-1578410170179-bb10594ed395?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80")
+    center center/cover no-repeat;
+  height: 60vh;
+  width: 100%;
+  /* padding: 100px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  object-fit: contain;
+  background-attachment: fixed;
+}
+.aboutImage p,
+h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 100;
+  margin-left: -15px;
+}
+/* .about_para_1 {
+  text-align: left !important;
+  padding: 10px;
+  margin-top: 10%;
+  background-color: #1c1919a6;
+  height: fit-content;
+}
+.about_para_1 h1 {
+  font-weight: 100;
+  text-align: left !important;
+  padding-left: 10px;
+}
+.about_para_1 p {
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 100;
+  margin: auto;
+}
+.header2 {
+  margin-top: 100px !important;
+  font-size: 20px;
+  opacity: 0.2;
+}
+
+.aboutImage2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about_para_2 {
+  background-color: white;
+  z-index: -1;
+}
+.teacherImage {
+  height: 400px;
+  width: 500px;
+  padding: 15px;
+  border-radius: 12px;
+  border-color: 2px solid white;
+} */
+.portfolio-image-container {
+  max-width: 70%;
+  /* height: 500px; */
+  overflow: hidden;
+  margin: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.portfolio-image-container .teacher_img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: contain; */
+  /* border: 3px solid #1b1919; */
+  border-radius: 5px;
+  align-self: center;
+}
+
+.portfolio-details {
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: transparent;
+  text-align: center;
+  padding: 10px;
+  padding-top: 50%;
+}
+
+.portfolio-image-container:hover {
+  box-shadow: 0 0 20px #74adc8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+  background-color: #80808078;
+  color: white;
+}
+
+.teacher_info {
+  display: flex;
+  flex-direction: column;
+}
+.teacher_info p {
+  margin-top: 40px;
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 100;
+}
+.about1_bottom {
+  background-color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+.break1 {
+  height: 140px;
+  width: 100%;
+}
+.about1_bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.about1_bottom p {
+  text-align: left;
+  margin-left: 20px;
+}
+.header_about {
+  font-size: 50px;
+  font-weight: 200;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+@media only screen and (max-width: 768px) {
+  .teacher_info {
+    display: block;
+    /* flex-direction: row; */
+    font-size: 20px;
+  }
+  .teacher_img {
+    object-fit: contain;
+    height: 400px;
+    width: 400px;
+  }
 }

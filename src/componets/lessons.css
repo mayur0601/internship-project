@@ -1,0 +1,100 @@
+.lessonImage {
+  background: url("https://images.unsplash.com/photo-1578410170179-bb10594ed395?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80")
+    center center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  /* padding: 100px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  object-fit: contain;
+  background-attachment: fixed;
+}
+.lesson1_para {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  margin-top: 0px;
+  padding-left: 20%;
+  padding-right: 20%;
+  letter-spacing: 1px;
+  font-size: 19px;
+}
+.lessonsSection {
+  background-color: white;
+  height: fit-content;
+  width: 100%;
+  color: black;
+  text-align: left;
+  padding-left: 50px;
+}
+.lessonsSection h2 {
+  color: black;
+  padding: 15px;
+}
+.list {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.list li {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+/* lessons right section */
+.lessonSectionRight {
+  background-color: #8a3630;
+  height: fit-content;
+  width: 100%;
+  color: white;
+  text-align: left;
+  padding-right: 50px;
+  padding-left: 25px;
+}
+.lessonSectionRight h2 {
+  padding-top: 10px;
+}
+.lessonSectionRight p {
+  font-size: 17px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+/* SYLLABUS */
+.syllabus {
+  background-color: white;
+  height: fit-content;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.syllabusImg {
+  object-fit: contain;
+}
+.syllabusLeft {
+  align-self: center;
+}
+.syllabusLeft p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .syllabus {
+    display: block;
+  }
+  .syllabusImg {
+    object-fit: contain;
+    height: 300px;
+    width: 100%;
+  }
+}
+
+.syllabusDescription {
+  display: flex;
+  flex-direction: column;
+}
