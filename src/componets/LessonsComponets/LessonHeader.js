@@ -1,5 +1,5 @@
 import React from "react";
-import "./lessons.css";
+import "../../assets/css/lessons.css";
 function LessonHeader() {
   return (
     <div className="lessonImage">

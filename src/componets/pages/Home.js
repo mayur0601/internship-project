@@ -1,11 +1,11 @@
 import React from "react";
 import "../../App.css";
 // import Cards from '../Cards';
-import BgSection from "../BgSection";
+import BgSection from "../HomeComponets/BgSection";
 // import Footer from '../Footer';
-import About from "../About";
-import Review from "../Review";
-import SuccessStories from "../SuccessStories";
+import About from "../HomeComponets/About";
+import Review from "../HomeComponets/Review";
+import SuccessStories from "../HomeComponets/SuccessStories";
 import Break from "../Break";
 function Home() {
   return (

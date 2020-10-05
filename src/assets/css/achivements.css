@@ -1,0 +1,38 @@
+.achievementBg {
+  background-image: url("https://images.unsplash.com/photo-1578410170179-bb10594ed395?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  min-height: 90vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+.BgDepth {
+  background-color: rgb(188, 154, 77, 0.6);
+  min-height: 90vh;
+  color: rgb(255, 255, 255);
+}
+
+.achievementHeader {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 100px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 620px) {
+  .achievementHeader {
+    font-size: 75px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .achievementHeader {
+    font-size: 55px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .achievementHeader {
+    font-size: 40px;
+  }
+}

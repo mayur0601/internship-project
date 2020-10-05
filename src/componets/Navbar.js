@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
 
+import "../assets/css/Navbar.css";
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);

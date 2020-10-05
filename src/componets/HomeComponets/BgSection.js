@@ -1,7 +1,8 @@
 import React from "react";
-import { Button } from "./Button";
-import "./bgSection.css";
+import { Button } from "../Button";
+import "../../assets/css/bgSection.css";
 import { Link } from "react-router-dom";
+
 function BgSection() {
   return (
     <div className="hero-container">
@@ -28,7 +29,7 @@ function BgSection() {
             className="btns"
             buttonStyle="btn--primary"
             buttonSize="btn--large"
-            onClick={console.log("hey")}
+            // onClick={}
           >
             Success Story
             <i className="far fa-play-circle" />

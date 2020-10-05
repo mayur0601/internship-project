@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import laCrescendo from "../images/pianoRecitals1.jpg";
+import laCrescendo from "../assets/images/pianoRecitals1.jpg";
 
 const styles = {
   footer: { background: "white", color: "#222222", padding: "10px" },

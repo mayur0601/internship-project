@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Social.css";
+import "../assets/css/Social.css";
 
 function Social() {
   return (

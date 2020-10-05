@@ -1,15 +1,16 @@
 import React from "react";
-import "./About.css";
-import teacher from "./teacher.jpg";
-import Break from "./Break";
+// import "src/assets/css/About.css";
+import "../../assets/css/About.css";
+import teacher from "../../assets/images/teacher.jpg";
+// import Break from "../Break";
 
-const styles = {
-  aboutHeading: {
-    // fontFamily: "",
-    fontSize: "50px",
-    marginBottom: "0",
-  },
-};
+// const styles = {
+//   aboutHeading: {
+//     // fontFamily: "",
+//     fontSize: "50px",
+//     marginBottom: "0",
+//   },
+// };
 
 function About() {
   return (
@@ -31,7 +32,7 @@ function About() {
         </p>
         <div className="teacher_info">
           <div className="portfolio-image-container">
-            <img src={teacher} alt="image" className="teacher_img" />
+            <img src={teacher} alt="Teacherimage" className="teacher_img" />
             <div className="portfolio-details">
               <h3>Miss. Aishwarya Ravindra Mohol</h3>
               <h3>

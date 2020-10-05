@@ -7,6 +7,7 @@ import MainAbout from "../componets/pages/MainAbout";
 import Footer from "./Footer";
 import Social from "./Social";
 import Lessons from "../componets/pages/Lessons";
+import AchivementPage from "./pages/AchivementPage";
 function App() {
   return (
     <div className="App">
@@ -25,7 +26,7 @@ function App() {
           </Route>
           <Route exact path="/achivements">
             {/* about us */}
-            <h2>achivements</h2>
+            <AchivementPage />
           </Route>
           <Route exact path="/lessons">
             {/* about us */}

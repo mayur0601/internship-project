@@ -1,13 +1,13 @@
 import React from "react";
-import syllabusImage from "./syllabus.png";
-import "./lessons.css";
+import syllabusImage from "../../assets/images/syllabus.png";
+import "../../assets/css/lessons.css";
 
 function Syllabus() {
   return (
     <div className="syllabus">
       <div className="syllausRight">
         <h2 className="text-center">SYLLABUS</h2>
-        <img src={syllabusImage} alt="image" className="syllabusImg" />
+        <img src={syllabusImage} alt="Syllimage" className="syllabusImg" />
       </div>
       <div className="syllabusLeft">
         <p>

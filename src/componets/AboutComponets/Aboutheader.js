@@ -1,6 +1,5 @@
 import React from "react";
-import "./About.css";
-import teacher from "./teacher1.jpg";
+import "../../assets/css/About.css";
 // import "./bgSection.css";
 
 function Aboutheader() {

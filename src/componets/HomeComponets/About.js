@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "../../assets/css/About.css";
 // import { Button } from "./Button";
 import { Link } from "react-router-dom";
 const styles = {

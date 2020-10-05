@@ -1,9 +1,7 @@
 import React from "react";
-import BgSection from "../BgSection";
-import Aboutheader from "../Aboutheader";
-import About1 from "../About_1";
-import Break from "../Break";
-import About1_bottom from "../About1_bottom";
+import Aboutheader from "../AboutComponets/Aboutheader";
+import About1 from "../AboutComponets/About_1";
+import About1bottom from "../AboutComponets/About1bottom";
 
 function MainAbout() {
   return (
@@ -11,7 +9,7 @@ function MainAbout() {
       <Aboutheader />
       <About1 />
       <div className="break1"></div>
-      <About1_bottom />
+      <About1bottom />
     </div>
   );
 }
