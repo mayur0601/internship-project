@@ -39,33 +39,55 @@ function Footer() {
           </div>
           <br></br>
           <Container className="d-flex justify-content-center mb-4">
-            <Form className="footerForm" style={styles.footerForm}>
+            <Form
+              className="footerForm"
+              style={styles.footerForm}
+              method="POST"
+              action="https://asia-south1-la-crescendo-academy.cloudfunctions.net/api/formdata"
+            >
               <Row>
                 <Col sm={6}>
                   <Form.Group>
                     <Form.Label>First Name</Form.Label>
-                    <Form.Control type="text" placeholder="First Name" />
+                    <Form.Control
+                      name="fname"
+                      type="text"
+                      placeholder="First Name"
+                    />
                   </Form.Group>
                 </Col>
                 <Col sm={6}>
                   <Form.Group>
                     <Form.Label>Last Name</Form.Label>
-                    <Form.Control type="text" placeholder="Last Name" />
+                    <Form.Control
+                      name="lname"
+                      type="text"
+                      placeholder="Last Name"
+                    />
                   </Form.Group>
                 </Col>
               </Row>
 
               <Form.Group>
                 <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Email" />
+                <Form.Control name="email" type="email" placeholder="Email" />
               </Form.Group>
               <Form.Group>
                 <Form.Label>Phone No.</Form.Label>
-                <Form.Control type="text" placeholder="Phone No." />
+                <Form.Control
+                  name="phone"
+                  type="text"
+                  placeholder="Phone No."
+                />
               </Form.Group>
               <Form.Group>
                 <Form.Label>Feedback</Form.Label>
-                <Form.Control as="textarea" placeholder="Feedback" rows={3} />
+                <Form.Control
+                  name="feedback"
+                  as="textarea"
+                  placeholder="Feedback"
+                  rows={3}
+                />
               </Form.Group>
 
               <Button variant="primary" type="submit" block>

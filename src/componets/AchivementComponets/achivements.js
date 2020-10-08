@@ -8,9 +8,7 @@ function achivements() {
     <Fragment>
       <div className="achievementBg">
         <div className="BgDepth d-flex align-items-center justify-content-center">
-          <h2 className="text-center achievementHeader">
-            Students Achivements
-          </h2>
+          <h2 className="text-center achievementHeader">Achivements</h2>
         </div>
       </div>
       <Container>

@@ -1,6 +1,6 @@
 .achievementBg {
   background-image: url("https://images.unsplash.com/photo-1578410170179-bb10594ed395?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-  min-height: 90vh;
+  min-height: 50vh;
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
@@ -8,15 +8,18 @@
 }
 
 .BgDepth {
-  background-color: rgb(188, 154, 77, 0.6);
+  /* background-color: rgb(188, 154, 77, 0.6); */
   min-height: 90vh;
   color: rgb(255, 255, 255);
 }
 
 .achievementHeader {
   font-family: "Sansita Swashed", cursive;
-  font-size: 100px;
-  padding: 20px;
+  font-size: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: black;
+  opacity: 0.8;
 }
 
 @media only screen and (max-width: 620px) {
@@ -35,4 +38,16 @@
   .achievementHeader {
     font-size: 40px;
   }
+}
+
+/* gallery */
+
+.gallery-waraper {
+  display: inline;
+  /* flex-direction: row;
+  flex-wrap: nowrap; */
+}
+.img {
+  height: 300px;
+  width: 300px;
 }

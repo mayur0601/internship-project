@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../Button";
 import "../../assets/css/bgSection.css";
 import { Link } from "react-router-dom";
+import "../Button.css";
 
 function BgSection() {
   return (
@@ -25,15 +26,14 @@ function BgSection() {
         </Link>
 
         <Link to="/achivements">
-          <Button
-            className="btns"
+          <button
+            className="successBtn"
             buttonStyle="btn--primary"
             buttonSize="btn--large"
-            // onClick={}
           >
             Success Story
             <i className="far fa-play-circle" />
-          </Button>
+          </button>
         </Link>
       </div>
     </div>

@@ -15,9 +15,10 @@
 .lesson1_para {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
+  width: 70%;
   margin-top: 0px;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
   letter-spacing: 1px;
   font-size: 19px;
 }
