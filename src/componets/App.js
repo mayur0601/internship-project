@@ -8,6 +8,11 @@ import Footer from "./Footer";
 import Social from "./Social";
 import Lessons from "../componets/pages/Lessons";
 import AchivementPage from "./pages/AchivementPage";
+import axios from "axios";
+
+axios.defaults.baseURL =
+  "https://asia-south1-la-crescendo-academy.cloudfunctions.net/api";
+
 function App() {
   return (
     <div className="App">

@@ -1,10 +1,27 @@
 .achievementBg {
-  background-image: url("https://images.unsplash.com/photo-1578410170179-bb10594ed395?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  background-image: url("https://images.unsplash.com/photo-1598547692361-e19190decfde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
   min-height: 50vh;
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
   position: relative;
+}
+
+.gap {
+  background-image: url("https://images.unsplash.com/photo-1476287803067-f714aa78eaa7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 40px;
+  height: 150px;
+}
+.gap h1 {
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  margin-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .BgDepth {

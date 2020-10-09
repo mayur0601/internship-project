@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "./Button";
+// import { Button } from "./Button";
 import { Link } from "react-router-dom";
 
 import "../assets/css/Navbar.css";
@@ -68,19 +68,22 @@ function Navbar() {
             </li>
 
             <li>
-              <Link
-                to="/contact"
+              <a
+                href="mailto:webtest354@gmail.com?cc=pnshinde51@gmail.com&subject=enquiry"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
                 Contact us
-              </Link>
+              </a>
             </li>
           </ul>
           {button && (
-            <Link to="/contact">
-              <Button buttonStyle="btn--outline">Contact us</Button>
-            </Link>
+            <a href="mailto:webtest354@gmail.com?cc=pnshinde51@gmail.com&subject=enquiry">
+              {/* <Button buttonStyle="btn--outline">Contact us</Button> */}
+              <button type="button" class="btn btn-dark contact_button">
+                contact us
+              </button>
+            </a>
           )}
         </div>
       </nav>

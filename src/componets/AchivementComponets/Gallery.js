@@ -8,9 +8,9 @@ function Gallery() {
 
   return (
     <div className="gallery">
-      <div className="title">
+      {/* <div className="title">
         <h1 className="text-center">GALLERY</h1>
-      </div>
+      </div> */}
 
       <ImageGrid setSelectedImg={setSelectedImg} />
       {selectedImg && (

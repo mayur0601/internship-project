@@ -22,6 +22,10 @@
   max-width: 1500px;
 }
 
+.contact_button:hover {
+  border: 1px solid white !important;
+}
+
 .navbar-logo {
   color: #fff !important;
   justify-self: start;
