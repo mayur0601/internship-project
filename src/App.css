@@ -121,10 +121,13 @@
   .footerForm {
     min-width: 350px;
   }
+  .lessonSectionRight {
+    padding-right: 10px;
+  }
 }
 
 .bgImage {
-  background-image: url("https://images.unsplash.com/photo-1476287803067-f714aa78eaa7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80");
+  background-image: url("./assets/images/contact.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -132,4 +135,33 @@
 }
 .product_rating {
   display: flex;
+}
+
+.achievementCard {
+  width: 28rem;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 560px) {
+  .achievementCard {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .achievementCard {
+    width: 18rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .achievementCard {
+    width: 16rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .achievementCard {
+    width: 14rem;
+  }
 }

@@ -3,7 +3,7 @@ import React from "react";
 import "../../assets/css/Card.css";
 
 function Card(props) {
-  const { imageUrl, ratings, featured, studentName, body } = props.review;
+  const { imageUrl, ratings, studentName, body } = props.review;
   return (
     <div>
       <div className="card" style={{ maxWidth: "700px" }}>
@@ -16,11 +16,12 @@ function Card(props) {
                 {Array(parseInt(ratings, 10))
                   .fill()
                   .map((_, i) => (
-                    <p>⭐</p>
+                    <span>⭐</span>
                   ))}
               </div>
             </div>
           </div>
+          <br></br>
           <p>
             <i class="fas fa-quote-left"></i> {body}{" "}
             <i class="fas fa-quote-right"></i>

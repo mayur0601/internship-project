@@ -7,6 +7,12 @@ import "../Button.css";
 function BgSection() {
   return (
     <div className="hero-container">
+      {/* <img
+        src="https://images.unsplash.com/photo-1518544897598-d3c0040f1089?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+        className="bg"
+        alt=""
+      /> */}
+
       <img
         src="https://images.unsplash.com/photo-1548695151-ac40f371b3f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
         className="bg"

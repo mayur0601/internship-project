@@ -30,19 +30,28 @@ function About() {
           students have been performing outstandingly well in their music career
           and Trinity examinations.
         </p>
+        <p className="text-center aboutPara mt-5">
+          We are also proud to have our students across the globe and have
+          celebrities like Kangana Ranaut and other talented students studying
+          music under us
+        </p>
+        <h3 className="text-center">INSTRUCTOR</h3>
         <div className="teacher_info">
           <div className="portfolio-image-container">
-            <img src={teacher} alt="Teacherimage" className="teacher_img" />
+            <img
+              src={teacher}
+              alt="Teacherimage"
+              className="teacher_img teaher_image_mobo"
+            />
             <div className="portfolio-details">
-              <h3>Miss. Aishwarya Ravindra Mohol</h3>
-              <h3>
-                holds a Grade 6 degree in Piano from Trinity College of Music
-                London
-              </h3>
+              <p>Miss. Aishwarya Ravindra Mohol</p>
+              <p>Grade pianist from Trinity college of music London</p>
             </div>
           </div>
           <p>
-            <h2> Miss. Aishwarya Ravindra Mohol </h2>
+            <strong>
+              <h6> Miss. Aishwarya Ravindra Mohol </h6>
+            </strong>
             Aishwarya Ravindra Mohol holds a Grade 6 degree in Piano from
             Trinity College of Music, London and is currently pursuing her
             higher degree in Music. She started her Music Journey in 1998 under
@@ -73,3 +82,5 @@ function About() {
 }
 
 export default About;
+
+// #885d1df5

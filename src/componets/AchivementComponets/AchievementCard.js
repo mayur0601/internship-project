@@ -17,9 +17,9 @@ const alteStyles = {
 function AchievementCard(props) {
   const {
     body,
-    featured,
+
     studentName,
-    designation,
+
     imageUrl,
   } = props.achivement;
 

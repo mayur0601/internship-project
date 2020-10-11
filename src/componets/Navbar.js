@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 // import { Button } from "./Button";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import "../assets/css/Navbar.css";
 function Navbar() {
@@ -28,48 +28,48 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <a href="/" className="navbar-logo" onClick={closeMobileMenu}>
             La Crescendo
             {/* <i class="fab fa-typo3" /> */}
             {/* <img src="/piano recitals.jpg" className="header_logo" /> */}
-          </Link>
+          </a>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <a href="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+              <a href="/about" className="nav-links" onClick={closeMobileMenu}>
                 About us
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link
-                to="/achivements"
+              <a
+                href="/achivements"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 achivements
-              </Link>
+              </a>
             </li>
 
             <li className="nav-item">
-              <Link
-                to="/lessons"
+              <a
+                href="/lessons"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 lessons
-              </Link>
+              </a>
             </li>
 
             <li>
               <a
-                href="mailto:webtest354@gmail.com?cc=pnshinde51@gmail.com&subject=enquiry"
+                href="mailto:laacrescendo@gmail.com?cc=laacrescendo@gmail.com&subject=Enquiry"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
@@ -78,9 +78,8 @@ function Navbar() {
             </li>
           </ul>
           {button && (
-            <a href="mailto:webtest354@gmail.com?cc=pnshinde51@gmail.com&subject=enquiry">
-              {/* <Button buttonStyle="btn--outline">Contact us</Button> */}
-              <button type="button" class="btn btn-dark contact_button">
+            <a href="mailto:laacrescendo@gmail.com?cc=laacrescendo@gmail.com&subject=Enquiry">
+              <button type="button" className="btn btn-dark contact_button">
                 contact us
               </button>
             </a>

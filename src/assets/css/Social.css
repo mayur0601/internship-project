@@ -16,7 +16,10 @@
   transition-property: all;
   transition-timing-function: ease-in-out;
 }
-
+.social .social-img-Ig {
+  /* padding: 2px; */
+  font-size: 25px;
+}
 .social .social-btn:hover {
   transform: scale(1.5);
 }

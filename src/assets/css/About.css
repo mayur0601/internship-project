@@ -185,9 +185,22 @@ h1 {
     /* flex-direction: row; */
     font-size: 20px;
   }
-  .teacher_img {
-    object-fit: contain;
-    height: 400px;
-    width: 400px;
+  .portfolio-image-container .teacher_img {
+    /* object-fit: ; */
+    height: 300px;
+    width: 120%;
+    border: 1px solid rgba(229, 203, 144, 1);
+    /* display: none; */
+    /* padding-left: 30px; */
+  }
+
+  .portfolio-details {
+    padding-top: 40%;
+  }
+  .portfolio-details p {
+    font-size: 15px;
+    text-align: center;
+    padding-right: 10px;
+    padding-bottom: -10px;
   }
 }

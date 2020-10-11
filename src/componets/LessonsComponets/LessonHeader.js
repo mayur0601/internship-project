@@ -11,6 +11,7 @@ function LessonHeader() {
       <h1 className="text-center header_about ">
         &nbsp; ONLINE PIANO LESSONS &nbsp;
       </h1>
+      <br></br>
       <p className="text-center lesson1_para">
         Now you can learn the piano at the comfort of your home without the
         hassle of commuting far away for your lessons. Stay in the comfort of

@@ -1,34 +1,40 @@
-import React, { useEffect, useState, Fragment } from "react";
-import CardItem from "./CardItem";
+import React, { useEffect, useState } from "react";
 import "../../assets/css/SuccessStories.css";
-import { Link } from "react-router-dom";
 import axios from "axios";
 
+//React-Bootstrap stuff
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
+
 function SuccessStories() {
-  const [achivements, setAchivements] = useState([]);
+  const [achievements, setAchievements] = useState([]);
 
   useEffect(() => {
     axios
       .get("/achievements")
       .then((res) => {
-        setAchivements(res.data);
+        setAchievements(res.data);
       })
       .catch((err) => console.error(err));
   }, []);
 
-  let count = 1;
-  let check = true;
-
-  const storiesMarkup = achivements.map((achievement) => (
-    <Fragment key={achievement.achievementId}>
-      {achievement.featured ? (
-        <CardItem
-          src={achievement.studentName}
-          text={achievement.body}
-          label={achievement.designation ? achievement.designation : null}
+  const achievementsMarkup = achievements.map((achievement) => (
+    <Col xl={6} style={{ padding: "50px 10px" }}>
+      <Card className="achievementCard">
+        <Card.Img
+          variant="top"
+          src={achievement.imageUrl}
+          style={{ width: "100%", height: "300px", objectFit: "contained" }}
+          className="cardImage"
         />
-      ) : null}
-    </Fragment>
+        <Card.Body>
+          <Card.Title>{achievement.studentName}</Card.Title>
+          <Card.Text>{achievement.body}</Card.Text>
+        </Card.Body>
+      </Card>
+    </Col>
   ));
 
   return (
@@ -37,33 +43,10 @@ function SuccessStories() {
         <h1 className="text-center">STUDENTS ACHIVEMENTS</h1>
       </div> */}
       <div className="cards">
-        <h1 styles={{ color: "black" }}>Student Achivements</h1>
+        <h1>Student Achivements</h1>
         <div className="cards__container">
           <div className="cards__wrapper">
-            <ul className="cards__items">
-              <CardItem
-                src="https://stories.eku.edu/sites/stories.eku.edu/files/imagecache/news_feature_stories_homepage_marquee/page_header_images/ligia_tossato_photo.jpg"
-                text="Travel through the Islands of Bali in a Private Cruise"
-                label="Adventure"
-              />
-              <CardItem
-                src="https://bloximages.chicago2.vip.townnews.com/crossville-chronicle.com/content/tncms/assets/v3/editorial/c/9f/c9f38e27-e618-5528-af58-7deb020b870a/53cb3e18c70da.image.jpg?resize=500%2C532"
-                text="Travel through the Islands of Bali in a Private Cruise"
-                label="Luxury"
-              />
-              <CardItem
-                src="https://www.wright.edu/sites/www.wright.edu/files/styles/teaser_aspect_3_2/public/uploads/2020/Jun/article/David-Dao-20523_030-2.jpg?itok=0ZuEz9FJ"
-                text="Set Sail in the Atlantic Ocean visiting Uncharted Waters"
-                label="Mystery"
-                path="/services"
-              />
-              <CardItem
-                src="https://www.wright.edu/sites/www.wright.edu/files/styles/teaser_aspect_3_2/public/uploads/2020/Jun/article/David-Dao-20523_030-2.jpg?itok=0ZuEz9FJ"
-                text="Set Sail in the Atlantic Ocean visiting Uncharted Waters"
-                label="Mystery"
-                path="/services"
-              />
-            </ul>
+            <Row style={{ justifyContent: "center" }}>{achievementsMarkup}</Row>
           </div>
           <Link to="/achivements">
             <button type="button" class="btn btn-primary">

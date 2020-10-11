@@ -1,89 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import axios from "axios";
 
 function ImageGrid({ setSelectedImg }) {
-  return (
-    <div className="image-grid">
-      <motion.div
-        className="img-wrap"
-        layout
-        whileHover={{ opacity: 1 }}
-        s
-        onClick={() =>
-          setSelectedImg(
-            "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-          )
-        }
-      >
-        <motion.img
-          src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-          alt="uploaded pic"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-        />
-      </motion.div>
+  const [gallery, setGallery] = useState([]);
 
-      <motion.div
-        className="img-wrap"
-        layout
-        whileHover={{ opacity: 1 }}
-        s
-        onClick={() =>
-          setSelectedImg(
-            "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-          )
-        }
-      >
-        <motion.img
-          src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-          alt="uploaded pic"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-        />
-      </motion.div>
+  useEffect(() => {
+    axios
+      .get("/gallery")
+      .then((res) => {
+        setGallery(res.data);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  }, []);
 
-      <motion.div
-        className="img-wrap"
-        layout
-        whileHover={{ opacity: 1 }}
-        s
-        onClick={() =>
-          setSelectedImg(
-            "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-          )
-        }
-      >
-        <motion.img
-          src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-          alt="uploaded pic"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-        />
-      </motion.div>
-      <motion.div
-        className="img-wrap"
-        layout
-        whileHover={{ opacity: 1 }}
-        s
-        onClick={() =>
-          setSelectedImg(
-            "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-          )
-        }
-      >
-        <motion.img
-          src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-          alt="uploaded pic"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-        />
-      </motion.div>
-    </div>
-  );
+  const galleryMarkup = gallery.map((picture) => (
+    <motion.div
+      className="img-wrap"
+      layout
+      whileHover={{ opacity: 1 }}
+      s
+      onClick={() => setSelectedImg(`${picture.imageUrl}`)}
+    >
+      <motion.img
+        src={picture.imageUrl}
+        alt="uploaded pic"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1 }}
+      />
+    </motion.div>
+  ));
+
+  return <div className="image-grid">{galleryMarkup}</div>;
 }
 
 export default ImageGrid;

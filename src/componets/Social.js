@@ -1,49 +1,39 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "../assets/css/Social.css";
 
 function Social() {
   return (
     <div className="social">
-      <Link className="facebook social-btn" href="">
-        <img
-          className="social-img"
-          src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png"
-          alt="fb"
-        />
-      </Link>
+      <a
+        className="facebook social-btn"
+        href="https://www.instagram.com/la_crescendo?r=nametag"
+      >
+        <i className=" fa fa-instagram  social-img-Ig"></i>
+      </a>
 
-      {/* <Link className="linkedin" className="social-btn" target="_blank" href="">
+      <a
+        className="gmail social-btn"
+        href="mailto:laacrescendo@gmail.com?cc=laacrescendo@gmail.com&subject=Enquiry"
+      >
         <img
-          className="social-img"
-          src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png"
-          alt="in"
-        />
-      </Link> */}
-
-      <Link className="twitter social-btn" href="">
-        <img
-          className="social-img"
-          src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000016_1549330452_twitter-logo.png"
-          alt="twi"
-        />
-      </Link>
-
-      <Link className="gmail social-btn" href="">
-        <img
-          className="social-img"
+          className=" social-img"
           src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000017_1549330467_google-logo.png"
           alt="g+"
         />
-      </Link>
+      </a>
 
-      <Link className="whatsapp social-btn" href="">
+      <a
+        className="whatsapp social-btn"
+        href="https://wa.me/<+91 9923229632>"
+        // target="_blank"
+      >
         <img
           className="social-img"
           src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000018_1549330485_whatsapp-logo.png"
           alt="w-app"
         />
-      </Link>
+      </a>
 
       {/* <Link id="mail" className="social-btn"  href="">
         <img
